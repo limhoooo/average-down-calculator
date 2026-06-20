@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary', title: '물타기 계산기', description: '주식 물타기 시뮬레이션 · 평균단가 역산 · 손익 계산' },
   alternates: { canonical: BASE_URL },
+  verification: { google: 'VO0T_4Yb3qD2RrVEM0qN_5OTMHHAkOXi_z8nhmz7qn4' },
   robots: { index: true, follow: true },
   other: { 'google-adsense-account': ADSENSE_CLIENT },
 };
