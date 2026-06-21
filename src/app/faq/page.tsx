@@ -91,6 +91,27 @@ const FAQS = [
     ],
   },
   {
+    category: '복리 계산기',
+    items: [
+      {
+        q: '복리와 단리의 차이는 무엇인가요?',
+        a: '단리는 원금에만 이자가 붙지만, 복리는 이자에도 다음 기간의 이자가 붙습니다. 예를 들어 1,000만원을 연 7%로 10년 투자하면 단리는 1,700만원, 복리는 약 1,967만원이 됩니다. 기간이 길수록 복리와 단리의 차이가 크게 벌어집니다.',
+      },
+      {
+        q: '연복리·월복리·분기복리 중 어떤 것이 유리한가요?',
+        a: '같은 연이율이라면 복리 계산 주기가 잦을수록 최종 금액이 조금 더 커집니다. 월복리 > 분기복리 > 연복리 순으로 유리합니다. 하지만 그 차이는 크지 않으며, 연이율 자체가 더 중요합니다.',
+      },
+      {
+        q: '72법칙이란 무엇인가요?',
+        a: '복리로 원금이 두 배가 되는 기간을 빠르게 계산하는 공식입니다. "72 ÷ 연이율(%)" 로 계산합니다. 예를 들어 연 8% 수익률이면 72 ÷ 8 = 9년에 원금이 두 배가 됩니다.',
+      },
+      {
+        q: '현재가치 역산은 어떤 경우에 사용하나요?',
+        a: '10년 후 1억원이 목표라면, 지금 얼마를 투자해야 하는지 계산할 때 사용합니다. 연 7% 복리 기준으로 1억원을 10년 후에 만들려면 현재 약 5,083만원을 투자하면 됩니다. 목표 금액과 예상 수익률이 있을 때 역산 기능을 활용하세요.',
+      },
+    ],
+  },
+  {
     category: '정기예금/적금 계산기',
     items: [
       {
@@ -243,6 +264,7 @@ export default function FaqPage() {
         <Link href="/avgdown/guide" className="privacy-link" style={{ fontSize: '14px', fontWeight: 600 }}>물타기 완벽 가이드 보기 →</Link>
         <Link href="/stock-tax/guide" className="privacy-link" style={{ fontSize: '14px', fontWeight: 600 }}>해외주식 양도소득세 가이드 보기 →</Link>
         <Link href="/realestate-tax/guide" className="privacy-link" style={{ fontSize: '14px', fontWeight: 600 }}>부동산 양도소득세 가이드 보기 →</Link>
+        <Link href="/compound/guide" className="privacy-link" style={{ fontSize: '14px', fontWeight: 600 }}>복리 계산기 가이드 보기 →</Link>
         <Link href="/savings/guide" className="privacy-link" style={{ fontSize: '14px', fontWeight: 600 }}>정기예금/적금 가이드 보기 →</Link>
         <Link href="/acquisition-tax/guide" className="privacy-link" style={{ fontSize: '14px', fontWeight: 600 }}>취득세 가이드 보기 →</Link>
       </div>

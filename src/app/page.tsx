@@ -45,6 +45,14 @@ const CALCULATORS = [
     ready: true,
   },
   {
+    emoji: '📊',
+    name: '복리 계산기',
+    nameEn: 'Compound Interest',
+    desc: '투자 원금의 복리 미래가치 계산 · 목표금액 역산 · 단리 대비 복리 효과 비교',
+    href: '/compound',
+    ready: true,
+  },
+  {
     emoji: '🏦',
     name: '정기예금/적금 계산기',
     nameEn: 'Deposit / Savings',
