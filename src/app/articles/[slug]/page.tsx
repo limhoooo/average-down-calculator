@@ -26,6 +26,7 @@ export async function generateMetadata({
   return {
     title: `${article.title} | 자산인사이트`,
     description: article.description,
+    keywords: article.keywords,
     alternates: { canonical: `${BASE_URL}/articles/${slug}` },
     openGraph: {
       title: article.title,
@@ -35,7 +36,14 @@ export async function generateMetadata({
       locale: 'ko_KR',
       url: `${BASE_URL}/articles/${slug}`,
       siteName: '자산인사이트',
+      authors: ['자산인사이트'],
     },
+    twitter: {
+      card: 'summary',
+      title: article.title,
+      description: article.description,
+    },
+    robots: { index: true, follow: true },
   };
 }
 
@@ -73,8 +81,11 @@ export default async function ArticlePage({
     '@type': 'Article',
     headline: article.title,
     description: article.description,
+    keywords: article.keywords.join(', '),
+    articleSection: article.category,
     url: `${BASE_URL}/articles/${slug}`,
     datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
     inLanguage: 'ko-KR',
     author: { '@type': 'Organization', name: '자산인사이트', url: BASE_URL },
     publisher: { '@type': 'Organization', name: '자산인사이트', url: BASE_URL },
