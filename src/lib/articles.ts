@@ -110,6 +110,33 @@ export const ARTICLES: Article[] = [
     keywords: ['반도체 ETF', 'KODEX 반도체', 'SOXX ETF', 'SMH ETF', 'TIGER 반도체', '반도체 ETF 추천', '필라델피아 반도체 지수', '반도체 ETF 세금', '미국 반도체 ETF', 'SOXL 레버리지'],
     relatedCalc: { label: '미국 주식 수익률 계산기', href: '/us-stocks' },
   },
+  {
+    slug: 'pension-irp-tax-deduction',
+    title: '연금저축 IRP 세액공제 완벽 가이드: 최대 148만 5천원 돌려받는 법',
+    description: '연금저축·IRP 납입 한도, 세액공제율 13.2~16.5%, 연금저축vs IRP 차이, 수령 시 연금소득세까지 절세 계좌 활용법을 완벽하게 정리합니다.',
+    category: '세금',
+    publishedAt: '2025-08-05',
+    keywords: ['연금저축 세액공제', 'IRP 세액공제', '연금저축 IRP 차이', '연금저축펀드', 'IRP 납입 한도', '연말정산 연금저축', '세액공제 900만원', '연금소득세', '연금저축 ETF', 'IRP 퇴직금'],
+    relatedCalc: { label: '복리 수익 계산기', href: '/compound' },
+  },
+  {
+    slug: 'isa-account-guide',
+    title: 'ISA 계좌 완전 분석: 중개형·서민형·일반형 비교와 200만원 비과세 활용법',
+    description: 'ISA 계좌 유형별(중개형·서민형·일반형) 차이, 비과세 한도 200~400만원 활용법, 만기 후 연금저축 전환 추가 세액공제까지 완전 정리합니다.',
+    category: '세금',
+    publishedAt: '2025-08-10',
+    keywords: ['ISA 계좌', '중개형 ISA', 'ISA 비과세', 'ISA 서민형', 'ISA 납입 한도', 'ISA 배당 ETF', 'ISA 만기 연금전환', 'ISA 절세', '개인종합자산관리계좌', 'ISA 가입 조건'],
+    relatedCalc: { label: '예적금 이자 계산기', href: '/savings' },
+  },
+  {
+    slug: 'dividend-stock-investment',
+    title: '국내 배당주 투자 가이드: 배당수익률 선별부터 배당소득세 절세까지',
+    description: '좋은 배당주 선별 기준(배당성향·지속성·FCF), 국내 고배당 섹터 분석, 배당소득세 15.4% 절세 전략, 배당 재투자 복리 효과를 정리합니다.',
+    category: '투자',
+    publishedAt: '2025-08-15',
+    keywords: ['배당주 투자', '배당수익률', '배당성향', '국내 고배당주', '배당소득세', '배당주 절세', '배당 ETF', '배당 재투자', '배당주 선별 기준', '고배당 ETF'],
+    relatedCalc: { label: '평단가 낮추기 계산기', href: '/avgdown' },
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

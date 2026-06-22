@@ -13,6 +13,9 @@ import SkhynixHbmAiInvestment from './content/SkhynixHbmAiInvestment';
 import MicronTechnologyInvestment from './content/MicronTechnologyInvestment';
 import SemiconductorCycleStrategy from './content/SemiconductorCycleStrategy';
 import SemiconductorEtfGuide from './content/SemiconductorEtfGuide';
+import PensionIrpTaxDeduction from './content/PensionIrpTaxDeduction';
+import IsaAccountGuide from './content/IsaAccountGuide';
+import DividendStockInvestment from './content/DividendStockInvestment';
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL ?? 'https://assetinsight.pages.dev';
 
@@ -64,6 +67,9 @@ const CONTENT_MAP: Record<string, React.ReactNode> = {
   'micron-technology-investment': <MicronTechnologyInvestment />,
   'semiconductor-cycle-strategy': <SemiconductorCycleStrategy />,
   'semiconductor-etf-guide': <SemiconductorEtfGuide />,
+  'pension-irp-tax-deduction': <PensionIrpTaxDeduction />,
+  'isa-account-guide': <IsaAccountGuide />,
+  'dividend-stock-investment': <DividendStockInvestment />,
 };
 
 export default async function ArticlePage({
