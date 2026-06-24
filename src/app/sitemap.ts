@@ -8,7 +8,7 @@ const BASE_URL =
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const articleEntries: MetadataRoute.Sitemap = ARTICLES.map((a) => ({
-    url: `${BASE_URL}/articles/${a.slug}`,
+    url: `${BASE_URL}/articles/${a.slug}/`,
     lastModified: new Date(a.publishedAt),
     changeFrequency: 'monthly' as const,
     priority: 0.85,
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: BASE_URL,
+      url: `${BASE_URL}/`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 1,
